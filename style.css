@@ -4,7 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: inherit;
+  color: #dad3c6;
   list-style-type: none;
   font-family: "Montserrat", sans-serif;
   transition: 100ms;
@@ -12,14 +12,14 @@
 
 a {
   text-decoration: none;
-  color: inherit;
+  color: #dad3c6;
 }
 
 body {
   /* background: linear-gradient(to bottom right, #29292a 40%, #417193); */
   /* background: linear-gradient(to bottom right, #542f18, #bc7f0e 20%, #542f18); */
   background: linear-gradient(to bottom right, #4b2a16, #a25c30 20%, #4b2a16);
-  color: #eeeeee;
+  color: wheat;
   text-shadow: 0 0 10px black;
   height: 100vh;
   width: 100vw;
@@ -40,6 +40,8 @@ nav {
 
 nav li {
   background-image: url("./assets/navlinks-texture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: calc(100% / 10);
   text-align: center;
   margin: 0 10px;
@@ -79,6 +81,12 @@ nav li:hover {
   opacity: 0.8;
   color: black;
   box-shadow: 0 0 5px black;
+}
+
+.navbar-nav a {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: wheat;
 }
 
 @media screen and (max-width: 768px) {
