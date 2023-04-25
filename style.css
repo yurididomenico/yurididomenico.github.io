@@ -18,11 +18,13 @@ a {
 body {
   /* background: linear-gradient(to bottom right, #29292a 40%, #417193); */
   /* background: linear-gradient(to bottom right, #542f18, #bc7f0e 20%, #542f18); */
-  background: linear-gradient(to bottom right, #4b2a16, #a25c30 20%, #4b2a16);
+  background: linear-gradient(to bottom, #4b2a16, #a25c30 20%, #4b2a16);
+  background-repeat: repeat;
   color: wheat;
   text-shadow: 0 0 10px black;
   height: 100vh;
   width: 100vw;
+  overflow: scroll;
 }
 
 header {
@@ -82,6 +84,7 @@ nav li {
   background-size: cover;
   filter: brightness(150%);
   transform: rotateX(180deg);
+  box-shadow: 0 0 10px black;
 }
 
 nav li:hover {
@@ -95,6 +98,10 @@ nav li:hover {
   font-size: 1.1rem;
   font-weight: bold;
   color: wheat;
+}
+
+.nav-item {
+  position: relative;
 }
 
 @media screen and (max-width: 768px) {
