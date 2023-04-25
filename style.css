@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: inherit;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+  transition: 100ms;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body {
   /* background: linear-gradient(to bottom right, #29292a 40%, #417193); */
   /* background: linear-gradient(to bottom right, #542f18, #bc7f0e 20%, #542f18); */
@@ -14,6 +31,20 @@ header {
   background-size: cover;
   position: relative;
   box-shadow: 0 0 30px black;
+}
+
+nav {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+nav li {
+  background-image: url("./assets/navlinks-texture.jpg");
+  width: calc(100% / 10);
+  text-align: center;
+  margin: 0 10px;
+  padding: 20px 0;
+  box-shadow: 0 10px 30px black;
 }
 
 .screw {
@@ -35,10 +66,31 @@ header {
   right: 10px;
 }
 .bottom-left {
-  bottom: 10px;
+  bottom: 15px;
   left: 10px;
 }
 .bottom-right {
-  bottom: 10px;
+  bottom: 15px;
   right: 10px;
+}
+
+nav li:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  color: black;
+  box-shadow: 0 0 5px black;
+}
+
+@media screen and (max-width: 768px) {
+  h1,
+  h3 {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .headerTitles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
