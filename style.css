@@ -23,7 +23,7 @@ body {
   color: wheat;
   text-shadow: 0 0 10px black;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   overflow: scroll;
 }
 
@@ -48,7 +48,7 @@ nav li {
   text-align: center;
   margin: 0 10px;
   padding: 20px 0;
-  box-shadow: 0 10px 30px black;
+  box-shadow: 0 10px 20px black;
 }
 
 .screw {
@@ -91,7 +91,8 @@ nav li:hover {
   cursor: pointer;
   opacity: 0.8;
   color: black;
-  box-shadow: 0 0 5px black;
+
+  box-shadow: 0 5px 5px black;
 }
 
 .navbar-nav a {
