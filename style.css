@@ -1,6 +1,9 @@
 body {
-  background: linear-gradient(to bottom right, #29292a 40%, #417193);
-  color: white;
+  /* background: linear-gradient(to bottom right, #29292a 40%, #417193); */
+  /* background: linear-gradient(to bottom right, #542f18, #bc7f0e 20%, #542f18); */
+  background: linear-gradient(to bottom right, #4b2a16, #a25c30 20%, #4b2a16);
+  color: #eeeeee;
+  text-shadow: 0 0 10px black;
   height: 100vh;
   width: 100vw;
 }
@@ -10,16 +13,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-}
-
-.glass {
-  background: rgba(141, 141, 141, 0.1);
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
+  box-shadow: 0 0 30px black;
 }
 
 .screw {
