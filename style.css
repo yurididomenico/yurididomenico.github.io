@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(to bottom right, #29292a 40%, #417193);
+  color: white;
+  height: 100vh;
+  width: 100vw;
+}
+
+header {
+  background-image: url("./assets/header-texture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.glass {
+  background: rgba(141, 141, 141, 0.1);
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.screw {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+}
+
+.screw img {
+  width: 100%;
+}
+
+.top-left {
+  top: 10px;
+  left: 10px;
+}
+.top-right {
+  top: 10px;
+  right: 10px;
+}
+.bottom-left {
+  bottom: 10px;
+  left: 10px;
+}
+.bottom-right {
+  bottom: 10px;
+  right: 10px;
+}
