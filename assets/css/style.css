@@ -11,7 +11,7 @@
   transition: 100ms;
 }
 body {
-  background: linear-gradient(to bottom, #2d4f67, #1d2b35);
+  background: linear-gradient(to left, #2d4f67, #263946);
 
   background-repeat: repeat;
   color: wheat;
@@ -23,7 +23,7 @@ body {
 }
 
 header {
-  background: linear-gradient(to bottom, #1d2b35, #2d4f67);
+  background: linear-gradient(to bottom right, #1d2b35, #2d4f67);
   padding: 20px;
   box-shadow: 0 0 20px black;
   display: flex;
