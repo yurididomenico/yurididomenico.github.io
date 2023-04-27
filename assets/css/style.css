@@ -114,20 +114,36 @@ section {
 #tendinaLinks {
   color: black;
   position: absolute;
-  top: 75px;
+  top: 77px;
   right: 0;
-  width: 250px;
+  width: 100%;
   border-radius: 20px 0 20px 0;
 }
 
 #tendinaLinks li {
-  background: linear-gradient(to bottom, #342465 30%, #241a47 70%, #0e0a1d);
+  background: linear-gradient(to bottom, #0e0a1d 80%, #342465);
   color: #dad3c6;
+  width: 100%;
   text-align: center;
   padding: 30px;
   margin: -2px;
   border-radius: 20px;
   border-bottom: 1px solid black;
+}
+
+/* ----------------------------------------------- */
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade {
+  animation: fade 0.5s;
 }
 
 /* ----------------------------------------------- */

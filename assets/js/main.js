@@ -21,6 +21,7 @@ const hambMenu = document.getElementById("hambMenu");
 const hambTendina = document.getElementById("tendinaLinks");
 
 hambMenu.addEventListener("click", function () {
+  hambTendina.classList.toggle("fade");
   hambTendina.classList.toggle("hidden");
 });
 
