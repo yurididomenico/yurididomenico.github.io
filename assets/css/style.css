@@ -11,7 +11,6 @@
   transition: 100ms;
 }
 body {
-  color: wheat;
   text-shadow: 0 0 10px black;
   height: 100vh;
   width: 100%;
@@ -32,7 +31,7 @@ header {
   /* background: linear-gradient(to bottom right, #1d2b35, #2d4f67); */
   background: linear-gradient(to bottom, #07050e 70%, #342567);
   height: 75px;
-  padding: 0 50px;
+  padding: 0 30px;
   box-shadow: 0 0 20px black;
   display: flex;
   align-items: center;
@@ -41,12 +40,6 @@ header {
   top: 0;
   width: 100%;
   z-index: 1;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 nav ul li {
@@ -83,11 +76,11 @@ section {
 }
 
 .nome {
-  text-shadow: 0 0 4px #9a8661;
+  text-shadow: 0 0 20px #8879ba;
 }
 
 .professione {
-  text-shadow: 0 0 4px #9a8661;
+  text-shadow: 0 0 20px #8879ba;
 }
 
 /* -------------------------------------------------------------- */
@@ -95,6 +88,10 @@ section {
 .home i {
   font-size: 32px;
   margin-right: 20px;
+}
+
+.fa-bars {
+  font-size: 30px;
 }
 
 .fa-brands:hover {
@@ -113,8 +110,29 @@ section {
   color: #0a66c2;
 }
 
+/* Menu a tendina */
+#tendinaLinks {
+  color: black;
+  position: absolute;
+  top: 75px;
+  right: 0;
+  width: 250px;
+  border-radius: 20px 0 20px 0;
+}
+
+#tendinaLinks li {
+  background: linear-gradient(to bottom, #342465 30%, #241a47 70%, #0e0a1d);
+  color: #dad3c6;
+  text-align: center;
+  padding: 30px;
+  margin: -2px;
+  border-radius: 20px;
+  border-bottom: 1px solid black;
+}
+
 /* ----------------------------------------------- */
-@media screen and (max-width: 321px) {
+
+@media screen and (max-width: 425px) {
   .info {
     width: 90%;
     margin: 0 auto;
@@ -135,8 +153,47 @@ section {
   }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 767px) {
+  #hambMenu {
+    display: block;
+  }
+
   nav ul {
     display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #hambMenu {
+    display: none;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nome {
+    font-size: 32px;
+  }
+
+  .professione {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .nome {
+    font-size: 48px;
+    padding-left: 10px;
+  }
+
+  .professione {
+    font-size: 32px;
+    padding-top: 10px;
+    padding-left: 30px;
   }
 }

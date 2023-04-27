@@ -1,5 +1,29 @@
 "use strict";
 
+// Cambio pagine senza refresh
+const linkHead = document.querySelectorAll(".linkHead");
+const linkPage = document.querySelectorAll(".linkPage");
+
+linkHead.forEach((element) => {
+  element.addEventListener("click", function () {
+    hambTendina.classList.add("hidden");
+    linkPage.forEach((el) => {
+      el.classList.add("hidden");
+      if (element.id == el.classList[0]) {
+        el.classList.remove("hidden");
+      }
+    });
+  });
+});
+
+// Hamburger menu
+const hambMenu = document.getElementById("hambMenu");
+const hambTendina = document.getElementById("tendinaLinks");
+
+hambMenu.addEventListener("click", function () {
+  hambTendina.classList.toggle("hidden");
+});
+
 // const linkPage = document.querySelectorAll(".linkPage");
 // const homeLink = document.getElementById("home");
 // const homeDiv = document.querySelector(".home");
@@ -51,17 +75,3 @@
 //   });
 //   contattiDiv.classList.remove("hidden");
 // });
-
-const linkHead = document.querySelectorAll(".linkHead");
-const linkPage = document.querySelectorAll(".linkPage");
-
-linkHead.forEach((element) => {
-  element.addEventListener("click", function () {
-    linkPage.forEach((el) => {
-      el.classList.add("hidden");
-      if (element.id == el.classList[0]) {
-        el.classList.remove("hidden");
-      }
-    });
-  });
-});
