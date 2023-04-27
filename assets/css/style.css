@@ -20,16 +20,23 @@ body {
   height: 100vh;
   width: 100%;
   overflow: scroll;
+  overflow-x: hidden;
+}
+
+.linea {
+  background-color: #dad3c6;
+  height: 2px;
 }
 
 header {
   background: linear-gradient(to bottom right, #1d2b35, #2d4f67);
-  padding: 20px;
+  height: 7vh;
+  padding: 0 50px;
   box-shadow: 0 0 20px black;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   top: 0;
   width: 100%;
   z-index: 1;
@@ -45,10 +52,41 @@ nav ul li {
   padding: 0 10px;
   height: 100%;
 }
+
+nav ul li:hover {
+  cursor: pointer;
+  color: #9a8661;
+}
 /* -------------------------------------------- */
 
-.main-content {
-  display: block;
-  position: relative;
-  top: 100px;
+main {
+  background-image: url("../img/background-stars.gif");
+  height: 93vh;
+  padding: 50px 0;
+}
+
+section {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.info {
+  background: linear-gradient(to bottom, #17222a 70%, #294b64);
+  padding: 20px;
+  margin: 0 50px;
+  border-radius: 60px;
+  margin-bottom: 50px;
+}
+
+.nome {
+  font-size: 4rem;
+  text-shadow: 0 0 4px #9a8661;
+  padding-left: 50px;
+  padding-bottom: 20px;
+}
+
+.professione {
+  font-size: 2rem;
+  text-shadow: 0 0 4px #9a8661;
+  padding-left: 100px;
 }
