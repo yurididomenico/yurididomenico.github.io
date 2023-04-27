@@ -83,22 +83,17 @@ section {
 }
 
 .nome {
-  font-size: 4rem;
   text-shadow: 0 0 4px #9a8661;
-  padding-left: 50px;
-  padding-bottom: 20px;
 }
 
 .professione {
-  font-size: 2rem;
   text-shadow: 0 0 4px #9a8661;
-  padding-left: 100px;
 }
 
 /* -------------------------------------------------------------- */
 
 .home i {
-  font-size: 2rem;
+  font-size: 32px;
   margin-right: 20px;
 }
 
@@ -116,4 +111,32 @@ section {
 
 .fa-linkedin:hover {
   color: #0a66c2;
+}
+
+/* ----------------------------------------------- */
+@media screen and (max-width: 321px) {
+  .info {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nome {
+    font-size: 25px;
+  }
+
+  .professione {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  nav ul {
+    display: none;
+  }
 }
