@@ -29,7 +29,8 @@ body {
 }
 
 header {
-  background: linear-gradient(to bottom right, #1d2b35, #2d4f67);
+  /* background: linear-gradient(to bottom right, #1d2b35, #2d4f67); */
+  background: linear-gradient(to bottom, #1e1e0d 70%, #342567);
   height: 7vh;
   padding: 0 50px;
   box-shadow: 0 0 20px black;
@@ -71,7 +72,8 @@ section {
 }
 
 .info {
-  background: linear-gradient(to bottom, #17222a 70%, #294b64);
+  /* background: linear-gradient(to bottom, #17222a 70%, #294b64); */
+  background: linear-gradient(to bottom, #1e1e0d 70%, #342567);
   padding: 20px;
   margin: 0 50px;
   border-radius: 60px;
