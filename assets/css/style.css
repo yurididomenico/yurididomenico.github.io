@@ -26,6 +26,11 @@ body {
 .linea {
   background-color: #dad3c6;
   height: 2px;
+  margin: 50px 0;
+}
+
+.hidden {
+  display: none;
 }
 
 header {
@@ -91,4 +96,27 @@ section {
   font-size: 2rem;
   text-shadow: 0 0 4px #9a8661;
   padding-left: 100px;
+}
+
+/* -------------------------------------------------------------- */
+
+.home i {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.fa-brands:hover {
+  position: relative;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+.fa-github:hover {
+  color: black;
+  background-color: grey;
+  border-radius: 50%;
+}
+
+.fa-linkedin:hover {
+  color: #0a66c2;
 }
