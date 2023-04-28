@@ -31,6 +31,14 @@ body {
   color: rgb(255, 191, 71);
 }
 
+.underlined {
+  text-decoration: underline;
+}
+
+.background-black-opacity-05 {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 header {
   /* background: linear-gradient(to bottom right, #1d2b35, #2d4f67); */
   background: linear-gradient(to bottom, #07050e 70%, #342567);
@@ -70,6 +78,16 @@ section {
   margin: 0 auto;
 }
 
+section h2 {
+  font-size: 64px;
+  padding-bottom: 50px;
+}
+
+p {
+  font-size: 28px;
+  padding: 10px 0;
+}
+
 .info {
   /* background: linear-gradient(to bottom, #17222a 70%, #294b64); */
   background: linear-gradient(to bottom, #07050e 70%, #342567);
@@ -85,6 +103,58 @@ section {
 
 .professione {
   text-shadow: 0 0 20px #8879ba;
+}
+
+/* -------------- ABOUT -------------- */
+.about section {
+  padding: 40px;
+}
+
+.about h3 {
+  font-size: 30px;
+}
+
+.about-title {
+  font-size: 25px;
+}
+
+.about section p {
+  width: 70%;
+}
+
+.about ul {
+  display: flex;
+}
+
+.about ul {
+  background: rgba(100, 100, 100, 0.5);
+  margin: 30px 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about li {
+  margin: 0 20px;
+}
+
+.logoLinguaggio {
+  object-fit: cover;
+  width: 60px;
+  height: 60px;
+}
+
+.logoLinguaggio img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logoLinguaggio h5 {
+  width: 100%;
 }
 
 /* -------------------------------------------------------------- */
