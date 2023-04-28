@@ -27,6 +27,10 @@ body {
   display: none;
 }
 
+.attiva {
+  color: rgb(255, 191, 71);
+}
+
 header {
   /* background: linear-gradient(to bottom right, #1d2b35, #2d4f67); */
   background: linear-gradient(to bottom, #07050e 70%, #342567);

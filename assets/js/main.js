@@ -6,9 +6,18 @@ const linkPage = document.querySelectorAll(".linkPage");
 
 linkHead.forEach((element) => {
   element.addEventListener("click", function () {
+    // Nasconde tendina (mobile)
     hambTendina.classList.add("hidden");
+    // Elimina da tutti i link la pagina attiva (css)
+    linkHead.forEach((x) => {
+      x.classList.remove("attiva");
+    });
+
+    element.classList.add("attiva");
+    // Nasconde tutte le pagine tranne quella cliccata
     linkPage.forEach((el) => {
       el.classList.add("hidden");
+
       if (element.id == el.classList[0]) {
         el.classList.remove("hidden");
       }
