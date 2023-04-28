@@ -108,6 +108,7 @@ p {
 /* -------------- ABOUT -------------- */
 .about section {
   padding: 40px;
+  border-radius: 20px;
 }
 
 .about h3 {
@@ -120,6 +121,7 @@ p {
 
 .about section p {
   width: 70%;
+  line-height: 40px;
 }
 
 .about ul {
@@ -223,6 +225,11 @@ p {
 /* ----------------------------------------------- */
 
 @media screen and (max-width: 425px) {
+  body {
+    overflow: scroll !important;
+    height: 100%;
+  }
+
   .info {
     width: 90%;
     margin: 0 auto;
@@ -241,6 +248,33 @@ p {
     font-size: 16px;
     padding-top: 10px;
   }
+
+  /* ------------------ ABOUT ------------------ */
+  .about section {
+    width: 95%;
+    padding: 40px 5px 0;
+  }
+
+  .about section p {
+    width: 100%;
+  }
+
+  .about h2 {
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .about h3 {
+    font-size: 20px;
+  }
+
+  .about p {
+    font-size: 15px;
+  }
+
+  .about-title {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -250,6 +284,11 @@ p {
 
   nav ul {
     display: none;
+  }
+
+  main {
+    overflow: auto;
+    height: 100vw;
   }
 }
 
