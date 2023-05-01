@@ -6,6 +6,7 @@ const linkPage = document.querySelectorAll(".linkPage");
 
 // HambMenu
 const hambMenu = document.getElementById("hambMenu");
+const hambMenuClose = document.getElementById("hambMenu");
 const hambTendina = document.getElementById("tendinaLinks");
 const selectOverlay = document.querySelector(".overlay");
 let toggleMenu = false;
