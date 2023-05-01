@@ -8,7 +8,7 @@ linkHead.forEach((element) => {
   element.addEventListener("click", function () {
     // Nasconde tendina (mobile) e overlay sfocato
     hambTendina.classList.add("hidden");
-    selectOverlay.classList.toggle("hidden");
+    selectOverlay.classList.add("hidden");
     // Elimina da tutti i link la pagina attiva (css)
     linkHead.forEach((x) => {
       x.classList.remove("attiva");
