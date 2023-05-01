@@ -86,19 +86,14 @@ main {
 }
 
 /* Stilizza la scrollbar */
-body::-webkit-scrollbar {
-  width: 10px;
+main::-webkit-scrollbar {
+  width: 0;
   height: 10px;
 }
 
 /* Stilizza il track della scrollbar */
-body::-webkit-scrollbar-track {
+main::-webkit-scrollbar-track {
   background-color: transparent;
-}
-
-body::-webkit-scrollbar-corner {
-  background-color: #f2f2f2;
-  border: none; /* Rimuove il bordo dell'angolo */
 }
 
 /* Stilizza il thumb della scrollbar */
