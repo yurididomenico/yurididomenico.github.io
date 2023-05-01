@@ -27,6 +27,17 @@ body {
   display: none;
 }
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 1;
+}
+
 .attiva {
   color: rgb(255, 191, 71);
 }
@@ -51,7 +62,7 @@ header {
   position: sticky;
   top: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 2;
 }
 
 nav ul li {
@@ -224,7 +235,7 @@ p {
     position: absolute;
     top: 77px;
     right: 0;
-    width: 80%;
+    width: 50%;
     border-radius: 20px 0 20px 0;
     overflow: scroll;
   }
@@ -306,6 +317,7 @@ p {
 @media screen and (max-width: 767px) {
   #hambMenu {
     display: block;
+    z-index: 2;
   }
 
   nav ul {

@@ -6,8 +6,9 @@ const linkPage = document.querySelectorAll(".linkPage");
 
 linkHead.forEach((element) => {
   element.addEventListener("click", function () {
-    // Nasconde tendina (mobile)
+    // Nasconde tendina (mobile) e overlay sfocato
     hambTendina.classList.add("hidden");
+    selectOverlay.classList.toggle("hidden");
     // Elimina da tutti i link la pagina attiva (css)
     linkHead.forEach((x) => {
       x.classList.remove("attiva");
@@ -28,10 +29,17 @@ linkHead.forEach((element) => {
 // Hamburger menu
 const hambMenu = document.getElementById("hambMenu");
 const hambTendina = document.getElementById("tendinaLinks");
+const selectOverlay = document.querySelector(".overlay");
 
 hambMenu.addEventListener("click", function () {
   hambTendina.classList.toggle("fade");
   hambTendina.classList.toggle("hidden");
+  selectOverlay.classList.toggle("hidden");
+});
+
+selectOverlay.addEventListener("click", function () {
+  hambTendina.classList.add("hidden");
+  selectOverlay.classList.add("hidden");
 });
 
 // const linkPage = document.querySelectorAll(".linkPage");
