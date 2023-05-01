@@ -231,9 +231,9 @@ section {
     overflow: scroll;
   }
 
-  p {
-    font-size: 28px;
-    padding: 10px 0;
+  section {
+    width: 90%;
+    margin: 0 auto;
   }
 
   h2 {
@@ -261,7 +261,7 @@ section {
     position: absolute;
     top: 77px;
     right: 0;
-    width: 50%;
+    width: 75%;
     border-radius: 20px 0 20px 0;
     overflow: scroll;
   }
@@ -277,8 +277,35 @@ section {
     border-bottom: 1px solid black;
   }
 
+  #hambMenuClose {
+    font-size: 35px;
+  }
+
   .text-red {
     color: red;
+  }
+
+  .esperienza h2 {
+    font-size: 32px;
+    padding-bottom: 40px;
+  }
+
+  .esperienza h3 {
+    font-size: 24px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+  }
+
+  .esperienza h5 {
+    font-size: 20px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+  }
+
+  .esperienza p {
+    font-size: 15px;
+    padding-left: 40px;
+    padding-bottom: 30px;
   }
 }
 
@@ -366,7 +393,8 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-  #hambMenu {
+  #hambMenu,
+  #hambMenuClose {
     display: none;
   }
 
