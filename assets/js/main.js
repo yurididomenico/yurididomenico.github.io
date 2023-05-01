@@ -10,9 +10,6 @@ linkHead.forEach((element) => {
     hambTendina.classList.add("hidden");
     selectOverlay.classList.add("hidden");
 
-    hambMenu.style.display = "block";
-    hambMenuClose.style.display = "none";
-
     // Elimina da tutti i link la pagina attiva (css)
     linkHead.forEach((x) => {
       x.classList.remove("attiva");
@@ -32,33 +29,18 @@ linkHead.forEach((element) => {
 
 // Hamburger menu
 const hambMenu = document.getElementById("hambMenu");
-const hambMenuClose = document.getElementById("hambMenuClose");
 const hambTendina = document.getElementById("tendinaLinks");
 const selectOverlay = document.querySelector(".overlay");
-
-hambMenuClose.style.display = "none";
 
 hambMenu.addEventListener("click", function () {
   hambTendina.classList.toggle("fade");
   hambTendina.classList.toggle("hidden");
   selectOverlay.classList.toggle("hidden");
-  hambMenu.style.display = "none";
-  hambMenuClose.style.display = "block";
-});
-
-hambMenuClose.addEventListener("click", function () {
-  hambTendina.classList.toggle("fade");
-  hambTendina.classList.toggle("hidden");
-  selectOverlay.classList.toggle("hidden");
-  hambMenu.style.display = "block";
-  hambMenuClose.style.display = "none";
 });
 
 selectOverlay.addEventListener("click", function () {
   hambTendina.classList.add("hidden");
   selectOverlay.classList.add("hidden");
-  hambMenu.style.display = "block";
-  hambMenuClose.style.display = "none";
 });
 
 // const linkPage = document.querySelectorAll(".linkPage");
