@@ -278,17 +278,16 @@ p {
 }
 
 @media screen and (max-width: 767px) {
+  main {
+    height: 100vh;
+  }
+
   #hambMenu {
     display: block;
   }
 
   nav ul {
     display: none;
-  }
-
-  main {
-    overflow: auto;
-    height: 100vw;
   }
 }
 
