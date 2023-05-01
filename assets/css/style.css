@@ -146,23 +146,21 @@ section {
 }
 
 .about ul {
-  display: flex;
-}
-
-.about ul {
   background: rgba(100, 100, 100, 0.5);
   margin: 30px 10px 0;
   padding: 10px;
   border-radius: 10px;
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .about li {
   margin: 0 20px;
+
+  padding: 20px 0;
 }
 
 .logoLinguaggio img {
@@ -176,6 +174,10 @@ section {
 .home i {
   font-size: 32px;
   margin-right: 20px;
+}
+
+.fa-brands {
+  font-size: 6em;
 }
 
 .fa-bars {
