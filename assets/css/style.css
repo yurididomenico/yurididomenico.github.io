@@ -70,7 +70,7 @@ main {
   background-repeat: no-repeat;
   background-size: cover;
   height: calc(100vh - 75px);
-  padding: 50px 0;
+  padding: 50px 0 400px;
 }
 
 section {
@@ -168,6 +168,18 @@ p {
   color: #0a66c2;
 }
 
+.fa-instagram:hover {
+  background: linear-gradient(to bottom right, #5b1eb1, #fe1648, #ffbf00);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.fa-youtube:hover {
+  color: #fe0000;
+}
+
 /* ----------------------------------------------- */
 
 @keyframes fade {
@@ -212,7 +224,7 @@ p {
     position: absolute;
     top: 77px;
     right: 0;
-    width: 50%;
+    width: 80%;
     border-radius: 20px 0 20px 0;
     overflow: scroll;
   }
@@ -230,8 +242,15 @@ p {
 }
 
 @media screen and (min-width: 320px) and (orientation: landscape) {
+  main {
+    height: 100%;
+    min-height: 150vh;
+  }
+
   #tendinaLinks {
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
+    padding-bottom: 100px;
     overflow: scroll;
   }
 }
