@@ -11,6 +11,7 @@ const hambTendina = document.getElementById("tendinaLinks");
 const selectOverlay = document.querySelector(".overlay");
 let toggleMenu = false;
 
+// Ruota hamb menu se cliccato
 function rotateMenu() {
   if (toggleMenu) {
     hambMenu.style.transform = "rotate(0deg)";
@@ -20,6 +21,7 @@ function rotateMenu() {
   toggleMenu = !toggleMenu;
 }
 
+// Aggiunge click ai link e gestisce pagine
 linkHead.forEach((element) => {
   element.addEventListener("click", function () {
     // Nasconde tendina (mobile) e overlay sfocato
