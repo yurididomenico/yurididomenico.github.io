@@ -221,6 +221,40 @@ section {
   height: 100%;
 }
 
+/* -------------- GIOCHI -------------- */
+.giochi {
+  display: flex;
+  align-items: flex-start;
+}
+
+.giochiLeftmenu {
+  background: linear-gradient(to left, #07050e 90%, #342567);
+  width: 300px;
+  height: 600px;
+  border-radius: 5%;
+  padding: 40px;
+  margin-right: 50px;
+}
+
+.giocoSingolo {
+  background: linear-gradient(to right bottom, transparent 60%, #342567);
+  box-shadow: 0 0 10px #342567;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition-duration: 200ms;
+}
+
+.giocoSingolo:hover {
+  background: linear-gradient(to right, transparent 10%, #342567);
+  box-shadow: 0 0 20px #554199;
+  transition-duration: 200ms;
+  padding-left: 40px;
+}
+
+.areaGiochi {
+}
+
 /* -------------------------------------------------------------- */
 
 .home i {
